@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution id="com.redwrenchdigital.eclipse.osintegration.popupMenus.IResource"
+             objectClass="org.eclipse.core.resources.IResource" adaptable="false">
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IResource.openInCommandPrompt"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCommandPrompt"
+             label="%Open-In-Command-Prompt">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IResource.openInCygwin"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCygwin"
+             label="%Open-In-Cygwin">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IResource.openInFileBrowser"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInFileBrowser"
+             label="%Open-In-File-Browser">
+         </action>
+      </objectContribution>
+      <objectContribution id="com.redwrenchdigital.eclipse.osintegration.popupMenus.IJavaElement" objectClass="org.eclipse.jdt.core.IJavaElement">
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IJavaElement.openInCommandPrompt"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCommandPrompt"
+             label="%Open-In-Command-Prompt">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IJavaElement.openInCygwin"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCygwin"
+             label="%Open-In-Cygwin">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IJavaElement.openInFileBrowser"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInFileBrowser"
+             label="%Open-In-File-Browser" adaptable="false">
+         </action>
+      </objectContribution>
+      <objectContribution id="com.redwrenchdigital.eclipse.osintegration.popupMenus.IModelElement"
+             objectClass="org.eclipse.dltk.core.IModelElement" adaptable="false">
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IModelElement.openInCommandPrompt"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCommandPrompt"
+             label="%Open-In-Command-Prompt">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IModelElement.openInCygwin"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInCygwin"
+             label="%Open-In-Cygwin">
+         </action>
+         <action id="com.redwrenchdigital.eclipse.osintegration.popupMenu.IModelElement.openInFileBrowser"
+             class="com.redwrenchdigital.eclipse.osintegration.action.OpenInFileBrowser"
+             label="%Open-In-File-Browser" adaptable="false">
+         </action>
+      </objectContribution>
+   </extension>
+</plugin>
